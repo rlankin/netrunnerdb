@@ -41,7 +41,7 @@ class ClaimsController extends AbstractOauthController
      * {
      *   "name":"Cheltenham - Proud Lion - SC",
      *   "url":"https://alwaysberunning.net/tournaments/300/cheltenham-proud-lion-sc",
-     *   "rank":1,
+     *   "claimRank":1,
      *   "participants":32
      * }
      *
@@ -141,7 +141,7 @@ class ClaimsController extends AbstractOauthController
         /** @var Claim $updatingClaim */
         $updatingClaim = $this->deserializeClaim($request);
         $claim->setName($updatingClaim->getName());
-        $claim->setRank($updatingClaim->getRank());
+        $claim->setClaimRank($updatingClaim->getClaimRank());
         $claim->setParticipants($updatingClaim->getParticipants());
         $claim->setUrl($updatingClaim->getUrl());
 

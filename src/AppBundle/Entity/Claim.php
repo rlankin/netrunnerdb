@@ -31,7 +31,7 @@ class Claim
      * @var integer
      * @Serializer\Expose
      */
-    private $rank;
+    private $claimRank;
 
     /**
      * @var integer
@@ -106,18 +106,18 @@ class Claim
     /**
      * @return int
      */
-    public function getRank()
+    public function getClaimRank()
     {
-        return $this->rank;
+        return $this->claimRank;
     }
 
     /**
-     * @param int $rank
+     * @param int $claimRank
      * @return $this
      */
-    public function setRank(int $rank)
+    public function setClaimRank(int $claimRank)
     {
-        $this->rank = $rank;
+        $this->claimRank = $claimRank;
 
         return $this;
     }

@@ -164,7 +164,7 @@ NRDB.user.params.decklist_id = Decklist.id;
     	<a href="{{ claim.url|raw }}" class="tournament_claim">{{ claim.name }}</a>
     </td>
     <td>
-        #{{ claim.rank }} of {{ claim.participants }}
+        #{{ claim.claimRank }} of {{ claim.participants }}
     </td>
     <td>
         <a href="{{ path('user_profile_view', {_locale:app.request.locale,user_id:claim.user_id,user_name:claim.username|e('url')}) }}">{{ claim.username }}</a>

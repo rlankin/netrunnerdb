@@ -386,7 +386,7 @@ class SocialController extends Controller
 
         $claims = $dbh->executeQuery("SELECT "
             . "c.url, "
-            . "c.rank, "
+            . "c.claimRank, "
             . "c.name, "
             . "c.participants, "
             . "u.id user_id, "

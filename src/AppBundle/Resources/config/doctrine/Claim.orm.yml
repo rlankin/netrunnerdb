@@ -35,7 +35,7 @@ AppBundle\Entity\Claim:
         url:
             type: string
             length: '255'
-        rank:
+        claimRank:
             type: smallint
         participants:
             type: smallint
